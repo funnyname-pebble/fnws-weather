@@ -17,8 +17,6 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseHttpsRedirection();
-
 app.MapGet("/weather", async (
     double lat, 
     double lon, 
